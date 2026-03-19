@@ -6,29 +6,26 @@
 <title>Narwhal Labs — Agency Partner Pack</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#07111f;color:white;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-weight:450;-webkit-font-smoothing:antialiased}
-:root{--c:#002DFF;--nav:#000000;--card:#0d0d0d;--bg:#000000;--mut:#9aaac8;--bdr:rgba(0,45,255,0.18)}
+body{background:#000000;color:white;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-weight:450;-webkit-font-smoothing:antialiased}
+:root{--c:#002DFF;--nav:#000000;--card:#0d0d0d;--bg:#000000;--mut:#9aaac8;--bdr:rgba(0,45,255,0.25)}
 nav{background:var(--nav);border-bottom:1px solid var(--bdr);padding:16px 36px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
-.logo{color:var(--c);font-weight:800;font-size:18px}
-.logo span{color:#6e90a8;font-size:12px;font-weight:400;margin-left:10px}
 .nav-tabs{display:flex;gap:6px}
 .tab{background:transparent;color:var(--mut);border:1px solid var(--bdr);border-radius:6px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;transition:all .15s}
-.tab.active{background:var(--c);color:#04090f;border-color:var(--c)}
+.tab.active{background:var(--c);color:white;border-color:var(--c)}
 .body{max-width:880px;margin:0 auto;padding:48px 28px 80px}
-.label{color:var(--c);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.label{color:var(--c);font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
 h1{font-size:40px;font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-1px}
 h1 span{color:var(--c)}
 .sub{color:var(--mut);font-size:17px;max-width:560px;line-height:1.75;margin-bottom:8px}
 .bold-intro{color:white;font-size:17px;font-weight:600;margin-bottom:40px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:44px}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .card{background:var(--card);border:1px solid var(--bdr);border-radius:14px}
 .stat-card{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:24px 20px}
 .stat-num{color:var(--c);font-size:36px;font-weight:800;line-height:1}
 .stat-sub{color:white;font-size:14px;font-weight:700;margin-top:10px}
 .stat-note{color:var(--mut);font-size:13px;margin-top:4px}
 table{width:100%;border-collapse:collapse}
-.tbl-head th{padding:14px 24px;text-align:left;color:var(--mut);font-size:12px;font-weight:600;border-bottom:1px solid var(--bdr)}
+.tbl-head th{padding:14px 24px;text-align:left;color:var(--mut);font-size:14px;font-weight:600;border-bottom:1px solid var(--bdr)}
 .tbl-head th.cyan{color:var(--c);font-weight:700}
 .tbl-head th.center{text-align:center}
 td{padding:13px 24px;font-size:13px;border-bottom:1px solid var(--bdr)}
@@ -38,31 +35,30 @@ td.narwhal{color:white;font-weight:700;text-align:center}
 tr:nth-child(even) td{background:rgba(255,255,255,0.018)}
 tr:last-child td{border-bottom:none}
 .tbl-header{padding:18px 24px;border-bottom:1px solid var(--bdr)}
-.tbl-label{color:var(--c);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.tbl-label{color:var(--c);font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
 .gear-card{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:22px 18px}
 .gear-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-.gear-lbl{color:var(--c);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
-.gear-tag{background:rgba(6,206,180,0.1);color:var(--c);font-size:10px;padding:3px 8px;border-radius:4px;font-weight:700}
+.gear-lbl{color:var(--c);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.gear-tag{background:rgba(0,45,255,0.1);color:var(--c);font-size:13px;padding:3px 8px;border-radius:4px;font-weight:700}
 .gear-title{color:white;font-size:14px;font-weight:700;margin-bottom:8px}
 .gear-desc{color:var(--mut);font-size:13px;line-height:1.65}
-.callout{background:rgba(6,206,180,0.06);border:1.5px solid var(--c);border-radius:12px;padding:24px 28px;display:flex;gap:16px;align-items:flex-start}
-.callout-icon{color:var(--c);font-size:20px;flex-shrink:0}
+.callout{background:rgba(0,45,255,0.06);border:1.5px solid var(--c);border-radius:12px;padding:24px 28px;display:flex;gap:16px;align-items:flex-start}
+.callout-icon{font-size:20px;flex-shrink:0}
 .callout-title{color:white;font-weight:700;font-size:14px;margin-bottom:6px}
 .callout-body{color:var(--mut);font-size:13px;line-height:1.75}
 .page{display:none}
 .page.active{display:block}
-.vert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px}
+.vert-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
 .vert-btn{background:var(--card);border:1.5px solid var(--bdr);border-radius:12px;padding:20px 16px;cursor:pointer;text-align:left;color:inherit;transition:all .15s;width:100%}
-.vert-btn.selected{background:rgba(6,206,180,0.1);border-color:var(--c)}
+.vert-btn.selected{background:rgba(0,45,255,0.1);border-color:var(--c)}
 .vert-emoji{font-size:22px;margin-bottom:10px}
 .vert-name{color:white;font-size:13px;font-weight:700;line-height:1.4}
 .vert-btn.selected .vert-name{color:var(--c)}
 .vert-cta{color:var(--mut);font-size:11px;margin-top:6px;font-weight:600}
 .vert-btn.selected .vert-cta{color:var(--c)}
-.empty-state{text-align:center;padding:48px 0;color:var(--mut);font-size:14px;border:1px dashed var(--bdr);border-radius:14px}
-.vert-detail{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:32px}
+.empty-state{text-align:center;padding:48px 0;color:var(--mut);font-size:14px;border:1px dashed var(--bdr);border-radius:14px;margin-bottom:12px}
+.expand-panel{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:32px;margin-bottom:12px;display:none}
 .vert-detail-head{display:flex;align-items:center;gap:16px;margin-bottom:28px;border-bottom:1px solid var(--bdr);padding-bottom:24px}
-.vert-detail-emoji{font-size:30px}
 .vert-detail-title{font-size:22px;font-weight:800;color:white;letter-spacing:-0.5px}
 .vert-detail-sub{color:var(--c);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
 .vert-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
@@ -71,7 +67,7 @@ tr:last-child td{border-bottom:none}
 .bullet-list{list-style:none}
 .bullet-list li{display:flex;gap:10px;margin-bottom:10px;color:white;font-size:13px;line-height:1.65}
 .bullet-arrow{color:var(--c);flex-shrink:0;margin-top:2px}
-.result-box{background:rgba(6,206,180,0.07);border:1px solid var(--c);border-radius:12px;padding:24px 20px;margin-bottom:16px}
+.result-box{background:rgba(0,45,255,0.07);border:1px solid var(--c);border-radius:12px;padding:24px 20px;margin-bottom:16px}
 .result-text{color:white;font-size:14px;line-height:1.8;font-weight:500}
 .earn-box{background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;border:1px solid var(--bdr)}
 .earn-num{color:white;font-size:24px;font-weight:800}
@@ -85,23 +81,22 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
 .range-labels{display:flex;justify-content:space-between;color:var(--mut);font-size:11px}
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
 .metric{border-radius:10px;padding:20px 16px}
-.metric.highlight{background:rgba(6,206,180,0.07);border:1px solid rgba(6,206,180,0.25)}
+.metric.highlight{background:rgba(0,45,255,0.07);border:1px solid rgba(0,45,255,0.25)}
 .metric.normal{background:rgba(255,255,255,0.03);border:1px solid var(--bdr)}
-.metric.featured{background:rgba(6,206,180,0.13);border:2px solid var(--c)}
+.metric.featured{background:rgba(0,45,255,0.13);border:2px solid var(--c)}
 .metric-label{font-size:11px;font-weight:700;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase}
 .metric.highlight .metric-label,.metric.featured .metric-label{color:var(--c)}
 .metric.normal .metric-label{color:var(--mut)}
 .metric-val{font-size:28px;font-weight:800}
 .metric.highlight .metric-val{color:var(--c)}
-.metric.normal .metric-val{color:white}
-.metric.featured .metric-val{color:white}
+.metric.normal .metric-val,.metric.featured .metric-val{color:white}
 .metric-note{font-size:12px;margin-top:5px}
 .metric.highlight .metric-note,.metric.featured .metric-note{color:var(--c)}
 .metric.normal .metric-note{color:var(--mut)}
 .streams{background:var(--card);border:1px solid var(--bdr);border-radius:14px;overflow:hidden;margin-bottom:32px}
 .stream-row{display:flex;justify-content:space-between;align-items:center;padding:15px 24px;border-bottom:1px solid var(--bdr)}
 .stream-row:last-child{border-bottom:none}
-.stream-row.hl{background:rgba(6,206,180,0.05)}
+.stream-row.hl{background:rgba(0,45,255,0.05)}
 .stream-name{color:white;font-size:14px;font-weight:500}
 .stream-row.hl .stream-name{color:var(--c);font-weight:700}
 .stream-detail{color:var(--mut);font-size:13px;max-width:340px;text-align:right}
@@ -109,30 +104,34 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
 .provide-item{display:flex;gap:12px;align-items:flex-start;padding:15px 18px;background:rgba(255,255,255,0.025);border-radius:10px;border:1px solid var(--bdr)}
 .check{color:var(--c);font-weight:800;flex-shrink:0;margin-top:1px}
 .provide-text{color:white;font-size:13px;line-height:1.65}
-.cta-box{background:rgba(6,206,180,0.07);border:1.5px solid var(--c);border-radius:16px;padding:40px;text-align:center}
+.cta-box{background:rgba(0,45,255,0.07);border:1.5px solid var(--c);border-radius:16px;padding:40px;text-align:center}
 .cta-tag{color:var(--c);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
 .cta-title{font-size:24px;font-weight:800;color:white;margin-bottom:10px;letter-spacing:-0.5px}
 .cta-body{color:var(--mut);font-size:14px;max-width:460px;margin:0 auto 28px;line-height:1.75}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-primary{background:var(--c);color:#04090f;padding:14px 28px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none;display:inline-block}
-.btn-sec{background:transparent;color:var(--c);padding:14px 28px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;border:1px solid var(--c);display:inline-block}
+.btn-primary{background:var(--c);color:white;padding:14px 28px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none;display:inline-block}
+.btn-sec{background:transparent;color:white;padding:14px 28px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;border:1px solid var(--c);display:inline-block}
 .cta-certs{color:var(--mut);font-size:11px;margin-top:22px;letter-spacing:0.5px}
 .bottom-nav{display:flex;justify-content:space-between;align-items:center;margin-top:48px;border-top:1px solid var(--bdr);padding-top:24px}
 .dots{display:flex;gap:8px;align-items:center}
 .dot{height:8px;border-radius:4px;background:var(--bdr);cursor:pointer;transition:all .2s}
 .dot.active{width:28px;background:var(--c)}
 .dot:not(.active){width:8px}
-.prev-btn,.next-btn{background:transparent;border:1px solid var(--bdr);color:var(--mut);padding:10px 22px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:700}
-.next-btn{background:var(--c);border-color:var(--c);color:#04090f}
+.prev-btn{background:transparent;border:1px solid var(--bdr);color:white;padding:10px 22px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:700}
+.next-btn{background:var(--c);border:1px solid var(--c);color:white;padding:10px 22px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:700}
 .prev-btn:disabled,.next-btn:disabled{opacity:0.35;cursor:not-allowed;background:transparent;color:var(--mut);border-color:var(--bdr)}
 </style>
 </head>
 <body>
+
 <nav>
-  <div><img src="https://narwhallabs.io/assets/logo-blue-CJLxHqRY.svg" style="height:28px;width:auto;" alt="Narwhal Labs"/><span class="logo"><span>Agency Partner Pack</span></span></div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <img src="https://narwhallabs.io/assets/logo-blue-CJLxHqRY.svg" style="height:28px;width:auto;" alt="Narwhal Labs"/>
+    <span style="color:var(--mut);font-size:12px;margin-left:8px">Agency Partner Pack</span>
+  </div>
   <div class="nav-tabs">
     <button class="tab active" onclick="goTo(0)">1. The Opportunity</button>
-    <button class="tab" onclick="goTo(1)">2. Your Vertical</button>
+    <button class="tab" onclick="goTo(1)">2. Your Industry</button>
     <button class="tab" onclick="goTo(2)">3. The Partnership</button>
   </div>
 </nav>
@@ -182,37 +181,34 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
 
 <!-- PAGE 2 -->
 <div class="page" id="p1">
-  <div class="label">Vertical Fit</div>
+  <div class="label">Industry Fit</div>
   <h1>Pick Your Clients' World</h1>
-  <p class="sub" style="margin-bottom:40px">Select the sector you work in. We'll show you exactly what Narwhal does for your clients — and what that means for your agency's revenue.</p>
+  <p class="sub" style="margin-bottom:24px">Select the industry you work in. We'll show you exactly what Narwhal does for your clients — and what that means for your agency's revenue.</p>
 
-  <div class="vert-grid">
-    <button class="vert-btn" onclick="selectVert(this,'rec')"><div class="vert-emoji">📋</div><div class="vert-name">Recruitment Agencies</div><div class="vert-cta">Explore →</div></button>
-    <button class="vert-btn" onclick="selectVert(this,'den')"><div class="vert-emoji">🦷</div><div class="vert-name">Dental &amp; Medical</div><div class="vert-cta">Explore →</div></button>
-    <button class="vert-btn" onclick="selectVert(this,'est')"><div class="vert-emoji">🏠</div><div class="vert-name">Estate Agents</div><div class="vert-cta">Explore →</div></button>
-    <button class="vert-btn" onclick="selectVert(this,'sol')"><div class="vert-emoji">☀️</div><div class="vert-name">Solar &amp; Home Services</div><div class="vert-cta">Explore →</div></button>
-    <button class="vert-btn" onclick="selectVert(this,'leg')"><div class="vert-emoji">⚖️</div><div class="vert-name">Legal &amp; Financial</div><div class="vert-cta">Explore →</div></button>
-    <button class="vert-btn" onclick="selectVert(this,'fm')"><div class="vert-emoji">🏗️</div><div class="vert-name">Facilities &amp; Construction</div><div class="vert-cta">Explore →</div></button>
+  <div id="empty-state" class="empty-state">Select an Industry above to see a tailored use case</div>
+
+  <!-- Row 1 -->
+  <div class="vert-row">
+    <button class="vert-btn" onclick="selectVert(this,'rec',1)"><div class="vert-emoji">📋</div><div class="vert-name">Recruitment Agencies</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'den',1)"><div class="vert-emoji">🦷</div><div class="vert-name">Dental &amp; Medical</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'est',1)"><div class="vert-emoji">🏠</div><div class="vert-name">Estate Agents</div><div class="vert-cta">Explore →</div></button>
   </div>
+  <div id="panel-1" class="expand-panel"></div>
 
-  <div id="vert-empty" class="empty-state">Select a vertical above to see the tailored pitch</div>
-  <div id="vert-detail" class="vert-detail" style="display:none">
-    <div class="vert-detail-head">
-      <span class="vert-detail-emoji" id="vd-emoji"></span>
-      <div><div class="vert-detail-title" id="vd-title"></div><div class="vert-detail-sub">Narwhal use case</div></div>
-    </div>
-    <div class="vert-cols">
-      <div>
-        <div class="micro-label">The problem</div>
-        <p class="vert-problem" id="vd-problem"></p>
-        <div class="micro-label">What Narwhal does</div>
-        <ul class="bullet-list" id="vd-bullets"></ul>
-      </div>
-      <div>
-        <div class="result-box"><div class="micro-label" style="color:var(--c)">The result</div><div class="result-text" id="vd-result"></div></div>
-        <div class="earn-box"><div class="micro-label">Your agency earns</div><div class="earn-num">£600<span>/mo per client</span></div><div class="earn-note">Plus usage margin on every call and message sent</div></div>
-      </div>
-    </div>
+  <!-- Row 2 -->
+  <div class="vert-row">
+    <button class="vert-btn" onclick="selectVert(this,'sol',2)"><div class="vert-emoji">☀️</div><div class="vert-name">Solar &amp; Home Services</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'leg',2)"><div class="vert-emoji">⚖️</div><div class="vert-name">Legal &amp; Financial</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'fm',2)"><div class="vert-emoji">🏗️</div><div class="vert-name">Facilities &amp; Construction</div><div class="vert-cta">Explore →</div></button>
+  </div>
+  <div id="panel-2" class="expand-panel"></div>
+
+  <!-- Row 3 — panel sits ABOVE -->
+  <div id="panel-3" class="expand-panel"></div>
+  <div class="vert-row">
+    <button class="vert-btn" onclick="selectVert(this,'hos',3)"><div class="vert-emoji">🏨</div><div class="vert-name">Hospitality</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'aut',3)"><div class="vert-emoji">🚗</div><div class="vert-name">Automotive</div><div class="vert-cta">Explore →</div></button>
+    <button class="vert-btn" onclick="selectVert(this,'ret',3)"><div class="vert-emoji">🛒</div><div class="vert-name">Retail &amp; eCommerce</div><div class="vert-cta">Explore →</div></button>
   </div>
 </div>
 
@@ -283,45 +279,57 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
 
 <script>
 var currentPage=0;
+
 var vertData={
   rec:{emoji:"📋",title:"Recruitment Agencies",problem:"Consultants spend hours on first-stage screening that rarely leads anywhere. Top candidates get snapped up while your team is still working through the list.",bullets:["Screens every applicant — availability, right to work, salary, notice period","Qualifies 24/7 and books the best into consultant diaries","Outbound campaigns to passive talent pools","Re-engages every dormant candidate in your database"],result:"Consultants spend 100% of their time on qualified candidates. Placements go up without headcount going up."},
   den:{emoji:"🦷",title:"Dental & Medical",problem:"Missed calls during evenings and weekends mean missed bookings. Patients book elsewhere. The phone is a bottleneck that costs real revenue every day.",bullets:["Answers every call 24/7 — no more out-of-hours missed bookings","Books directly into the practice management system","Automated reminders and follow-ups to cut no-shows","Re-engages lapsed patients with outbound recall campaigns"],result:"Fully booked diaries. Zero receptionist overflow. Patients get a response every time, day or night."},
   est:{emoji:"🏠",title:"Estate Agents",problem:"Enquiries come in at all hours. The agent who responds first wins the instruction. Most agents call back hours later — if at all.",bullets:["Responds to every enquiry within seconds, around the clock","Qualifies buyer and seller intent, books viewings into agent diaries","Follows up on valuation leads that went cold","Outbound campaigns to landlord and vendor data lists"],result:"More viewings booked. More instructions won. Agents focus entirely on qualified, ready-to-move prospects."},
   sol:{emoji:"☀️",title:"Solar & Home Services",problem:"Lead gen spend is wasted when follow-up is slow. Homeowners submit a form and hear nothing for 24 hours — by which time they've booked a competitor.",bullets:["Calls every lead within seconds of form submission","Qualifies homeowner eligibility automatically — tenure, roof type, energy usage","Books surveys directly into installer diaries","Re-engages every lead that previously went cold"],result:"Higher conversion from the same ad spend. Survey diaries filled automatically. No lead left behind."},
   leg:{emoji:"⚖️",title:"Legal & Financial",problem:"High-intent enquiries arrive outside office hours and bounce to voicemail nobody returns in time. Compliant, auditable communication is non-negotiable.",bullets:["Triages every enquiry 24/7 — intent, urgency and contact details captured","Qualifies leads against case type before any human is involved","Books consultations into fee earner diaries automatically","Full audit trail on every interaction — built for regulated environments"],result:"No lead goes cold. Compliance maintained. Fee earners only speak to pre-qualified prospects."},
-  fm:{emoji:"🏗️",title:"Facilities & Construction",problem:"Tender enquiries and contract follow-ups get lost in inboxes. Outbound prospecting is inconsistent and relies entirely on individual reps.",bullets:["Handles inbound enquiries — qualifies scope, budget and timeline","Structured outbound campaigns to FM decision-makers","Follows up on all submitted proposals automatically","Re-engages lapsed clients and dormant prospects"],result:"More qualified tender opportunities. Consistent outbound activity without relying on rep discipline."}
+  fm:{emoji:"🏗️",title:"Facilities & Construction",problem:"Tender enquiries and contract follow-ups get lost in inboxes. Outbound prospecting is inconsistent and relies entirely on individual reps.",bullets:["Handles inbound enquiries — qualifies scope, budget and timeline","Structured outbound campaigns to FM decision-makers","Follows up on all submitted proposals automatically","Re-engages lapsed clients and dormant prospects"],result:"More qualified tender opportunities. Consistent outbound activity without relying on rep discipline."},
+  hos:{emoji:"🏨",title:"Hospitality",problem:"Booking enquiries arrive at all hours — evenings, weekends, bank holidays. Every unanswered call or slow response is a booking lost to a competitor who picks up.",bullets:["Answers every inbound call 24/7 — no missed bookings out of hours","Books reservations and events directly into the diary","Sends automated confirmation, upsell and pre-arrival sequences","Re-engages lapsed guests with tailored outbound campaigns"],result:"More bookings confirmed, fewer no-shows, higher average spend per guest through automated upsell."},
+  aut:{emoji:"🚗",title:"Automotive",problem:"Finance leads go cold fast. Dealerships and brokers lose deals to whoever calls back first — and most follow-up happens hours after the enquiry comes in.",bullets:["Calls every finance or test drive enquiry within seconds","Qualifies buyer intent, budget and eligibility automatically","Books appointments directly into sales team diaries","Re-engages cold leads and dormant CRM data at scale"],result:"Higher conversion from the same lead volume. Sales teams only speak to pre-qualified, ready-to-buy prospects."},
+  ret:{emoji:"🛒",title:"Retail & eCommerce",problem:"Abandoned carts, lapsed customers and unengaged subscribers represent enormous untapped revenue. Most brands rely on email alone — which gets ignored.",bullets:["Recovers abandoned carts via voice and SMS within minutes","Re-engages lapsed customers with personalised outbound campaigns","Follows up on post-purchase to drive repeat orders and reviews","Handles inbound product and order enquiries 24/7"],result:"More revenue from existing traffic and customer base. Higher LTV without increasing ad spend."}
 };
+
+function buildPanel(v){
+  return '<div class="vert-detail-head"><span style="font-size:30px">'+v.emoji+'</span><div><div class="vert-detail-title">'+v.title+'</div><div class="vert-detail-sub">Narwhal use case</div></div></div><div class="vert-cols"><div><div class="micro-label">The problem</div><p class="vert-problem">'+v.problem+'</p><div class="micro-label">What Narwhal does</div><ul class="bullet-list">'+v.bullets.map(function(b){return'<li><span class="bullet-arrow">→</span><span>'+b+'</span></li>';}).join('')+'</ul></div><div><div class="result-box"><div class="micro-label" style="color:var(--c)">The result</div><div class="result-text">'+v.result+'</div></div><div class="earn-box"><div class="micro-label">Your agency earns</div><div class="earn-num">£600<span>/mo per client</span></div><div class="earn-note">Plus usage margin on every call and message sent</div></div></div></div>';
+}
+
+function selectVert(btn,id,row){
+  var isSelected=btn.classList.contains('selected');
+  document.querySelectorAll('.vert-btn').forEach(function(b){
+    b.classList.remove('selected');
+    b.querySelector('.vert-cta').textContent='Explore →';
+  });
+  document.getElementById('panel-1').style.display='none';
+  document.getElementById('panel-2').style.display='none';
+  document.getElementById('panel-3').style.display='none';
+  if(isSelected){
+    document.getElementById('empty-state').style.display='block';
+    return;
+  }
+  btn.classList.add('selected');
+  btn.querySelector('.vert-cta').textContent='Selected ✓';
+  document.getElementById('empty-state').style.display='none';
+  var panel=document.getElementById('panel-'+row);
+  panel.innerHTML=buildPanel(vertData[id]);
+  panel.style.display='block';
+}
 
 function goTo(n){
   if(n<0||n>2)return;
-  document.querySelectorAll('.page').forEach(function(p,i){p.classList.toggle('active',i===n)});
-  document.querySelectorAll('.tab').forEach(function(t,i){t.classList.toggle('active',i===n)});
-  document.querySelectorAll('.dot').forEach(function(d,i){d.classList.toggle('active',i===n)});
+  document.querySelectorAll('.page').forEach(function(p,i){p.classList.toggle('active',i===n);});
+  document.querySelectorAll('.tab').forEach(function(t,i){t.classList.toggle('active',i===n);});
+  document.querySelectorAll('.dot').forEach(function(d,i){d.classList.toggle('active',i===n);});
   document.getElementById('prev-btn').disabled=n===0;
   document.getElementById('next-btn').disabled=n===2;
   currentPage=n;
   window.scrollTo(0,0);
 }
 
-function selectVert(btn,id){
-  document.querySelectorAll('.vert-btn').forEach(function(b){b.classList.remove('selected');b.querySelector('.vert-cta').textContent='Explore →';b.querySelector('.vert-name').style.color='white'});
-  btn.classList.add('selected');
-  btn.querySelector('.vert-cta').textContent='Selected ✓';
-  var v=vertData[id];
-  document.getElementById('vd-emoji').textContent=v.emoji;
-  document.getElementById('vd-title').textContent=v.title;
-  document.getElementById('vd-problem').textContent=v.problem;
-  document.getElementById('vd-result').textContent=v.result;
-  var ul=document.getElementById('vd-bullets');
-  ul.innerHTML='';
-  v.bullets.forEach(function(b){ul.innerHTML+='<li><span class="bullet-arrow">→</span><span>'+b+'</span></li>'});
-  document.getElementById('vert-empty').style.display='none';
-  document.getElementById('vert-detail').style.display='block';
-}
-
 function updateCalc(v){
-  var c=parseInt(v);
-  var ret=c*600,use=c*80,tot=ret+use;
+  var c=parseInt(v),ret=c*600,use=c*80,tot=ret+use;
   document.getElementById('client-count').textContent=c;
   document.getElementById('m-ret').textContent='£'+ret.toLocaleString();
   document.getElementById('m-ret-note').textContent=c+' × £600/mo';
