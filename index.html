@@ -152,7 +152,7 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
 <nav>
   <div style="display:flex;align-items:center;gap:10px">
     <img src="https://narwhallabs.io/assets/logo-blue-CJLxHqRY.svg" style="height:28px;width:auto" alt="Narwhal Labs"/>
-    <span style="color:var(--mut);font-size:12px;margin-left:8px">Agency Partner Pack</span>
+    <span style="color:var(--mut);font-size:12px;margin-left:8px">Agency Partner Pack — DeepBlue OS by Narwhal Labs</span>
   </div>
   <div class="nav-tabs">
     <button class="tab active" onclick="goTo(0)">1. How it Works</button>
@@ -168,10 +168,10 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
   <div class="label">Partnership Opportunity</div>
   <h1>The AI That Works<br><span>While You Sleep</span></h1>
   <p class="sub">Every business you work with is losing revenue the same way — missed calls, slow follow-up, and reps who only work 9 to 5. The average lead goes cold in under 5 minutes. Most businesses respond in over 2 hours.</p>
-  <p class="bold-intro">That gap is where deals die. Narwhal V2 closes it — permanently.</p>
+  <p class="bold-intro">That gap is where deals die. DeepBlue OS closes it — permanently.</p>
 
   <div class="grid3">
-    <div class="stat-card"><div class="stat-num">£21K</div><div class="stat-sub">avg. annual saving</div><div class="stat-note">vs £30K for a human rep</div></div>
+    <div class="stat-card"><div class="stat-num">£35K</div><div class="stat-sub">avg. annual saving</div><div class="stat-note">vs full employment cost of a human rep</div></div>
     <div class="stat-card"><div class="stat-num">24/7</div><div class="stat-sub">always on</div><div class="stat-note">365 days a year</div></div>
     <div class="stat-card"><div class="stat-num">10,000</div><div class="stat-sub">calls per minute</div><div class="stat-note">at full capacity</div></div>
   </div>
@@ -183,11 +183,12 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
         <tr class="tbl-head">
           <th></th>
           <th>Human Sales Rep</th>
-          <th class="cyan">Narwhal V2 Agent</th>
+          <th class="cyan">DeepBlue Agent</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td class="lc">Cost</td><td class="hc">~£30,000/year</td><td class="nc">~£9,000/year*</td></tr>
+        <tr><td class="lc">Cost</td><td class="hc"><span id="hcost-toggle" onclick="toggleCost()" style="cursor:pointer;text-decoration:underline;text-decoration-style:dotted;color:#a0b4c8">£45,315/year ▾</span></td><td class="nc">~£9,000/year*</td></tr>
+        <tr id="cost-breakdown" style="display:none"><td colspan="3" style="padding:0"><div style="background:rgba(0,45,255,0.06);border:1px solid var(--bdr);border-radius:8px;margin:4px 24px 8px;padding:16px 20px"><div style="color:var(--c);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px">Full employer cost — Telecomms Agent</div><div style="color:var(--mut);font-size:10px;margin-bottom:12px">40hrs/week · National Living Wage · Bristol · April 2026</div><div style="display:grid;grid-template-columns:1fr auto;gap:6px 24px;font-size:12px"><span style="color:var(--mut)">Payroll &amp; Statutory Costs</span><span style="color:#fff;text-align:right">£32,293</span><span style="color:var(--mut)">Sickness &amp; Absence</span><span style="color:#fff;text-align:right">£1,472</span><span style="color:var(--mut)">Hardware &amp; Equipment</span><span style="color:#fff;text-align:right">£880</span><span style="color:var(--mut)">Software &amp; Telecoms Tooling</span><span style="color:#fff;text-align:right">£2,340</span><span style="color:var(--mut)">Office &amp; Facilities</span><span style="color:#fff;text-align:right">£4,280</span><span style="color:var(--mut)">People Ops &amp; Overhead</span><span style="color:#fff;text-align:right">£4,050</span><span style="color:#fff;font-weight:700;border-top:1px solid var(--bdr);padding-top:8px;margin-top:4px">Total annual employer cost</span><span style="color:var(--c);font-weight:800;text-align:right;border-top:1px solid var(--bdr);padding-top:8px;margin-top:4px">£45,315</span></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px"><div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:10px;margin-bottom:4px">Per month</div><div style="color:#fff;font-size:14px;font-weight:800">£3,776</div></div><div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:10px;margin-bottom:4px">Per week</div><div style="color:#fff;font-size:14px;font-weight:800">£871</div></div><div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:10px;margin-bottom:4px">Per hour worked</div><div style="color:#fff;font-size:14px;font-weight:800">£22</div></div></div></div></td></tr>
         <tr><td class="lc">Hours</td><td class="hc">9–5, Mon–Fri</td><td class="nc">24/7/365</td></tr>
         <tr><td class="lc">Calls per day</td><td class="hc">50–80</td><td class="nc">Up to 10,000/min</td></tr>
         <tr><td class="lc">Follow-up speed</td><td class="hc">Hours</td><td class="nc">Seconds</td></tr>
@@ -196,7 +197,7 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
       </tbody>
     </table>
   </div>
-  <p style="color:var(--mut);font-size:11px;text-align:right;margin-bottom:40px">*Based on matching avg. full time employees output</p>
+  <p style="color:var(--mut);font-size:11px;text-align:right;margin-bottom:40px">*Based on matching avg. full time employees output. Human cost includes salary, NI, pension &amp; holiday pay.</p>
 
   <div class="label" style="margin-bottom:20px">Three ways your clients go live</div>
   <div class="grid3" style="margin-bottom:36px">
@@ -206,7 +207,7 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
         <span class="gear-tag">Free entry</span>
       </div>
       <div class="gear-title">Free Inbound Receptionist</div>
-      <div class="gear-desc">Answers every call, captures every lead, books into the calendar. Free to start. No credit card.</div>
+      <div class="gear-desc">Answers every call, captures every lead, books into the calendar. Free to start.</div>
     </div>
     <div class="gear-card">
       <div class="gear-top">
@@ -266,6 +267,12 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
     <button class="vert-btn" onclick="selV(this,'aut',3)"><div class="vert-emoji">🚗</div><div class="vert-name">Automotive</div><div class="vert-cta">Explore →</div></button>
     <button class="vert-btn" onclick="selV(this,'ret',3)"><div class="vert-emoji">🛒</div><div class="vert-name">Retail &amp; eCommerce</div><div class="vert-cta">Explore →</div></button>
   </div>
+
+  <!-- Row 4 — something else -->
+  <div id="panel4" class="expand-panel"></div>
+  <div class="vert-row" style="grid-template-columns:repeat(3,1fr)">
+    <button class="vert-btn" onclick="selV(this,'other',4)" style="grid-column:2"><div class="vert-emoji">🔍</div><div class="vert-name">Something else?</div><div class="vert-cta">Find out →</div></button>
+  </div>
 </div>
 
 <!-- ═══ PAGE 3 ═══ -->
@@ -275,24 +282,39 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
   <p class="sub" style="margin-bottom:40px">You bring the client relationships. Narwhal provides the platform, technology and support. You earn recurring revenue every month.</p>
 
   <div class="calc-card">
-    <div class="label" style="margin-bottom:20px">Revenue calculator</div>
-    <div class="calc-row">
-      <label class="calc-lbl">Clients you manage Narwhal agents for</label>
-      <span class="calc-val" id="cc">15</span>
+    <div class="label" style="margin-bottom:6px">Your revenue calculator</div>
+    <p style="color:var(--mut);font-size:13px;margin-bottom:24px;line-height:1.6">You set what you charge your clients — the figures below are based on how our existing partners are pricing DeepBlue OS today. Adjust to match your own model.</p>
+
+    <div style="margin-bottom:20px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <label style="color:#fff;font-size:14px;font-weight:600">Clients you manage agents for</label>
+        <span style="color:var(--c);font-size:22px;font-weight:800" id="cc">15</span>
+      </div>
+      <input type="range" min="1" max="100" step="1" value="15" oninput="doCalc()"/>
+      <div class="range-lbl"><span>1 client</span><span>100 clients</span></div>
     </div>
-    <input type="range" min="1" max="100" step="1" value="15" oninput="doCalc(this.value)"/>
-    <div class="range-lbl"><span>1 client</span><span>100 clients</span></div>
+
+    <div style="margin-bottom:24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <label style="color:#fff;font-size:14px;font-weight:600">Avg. monthly ad spend per client</label>
+        <span style="color:var(--c);font-size:22px;font-weight:800" id="adspend">£1,600</span>
+      </div>
+      <input type="range" min="500" max="10000" step="100" value="1600" oninput="doCalc()"/>
+      <div class="range-lbl"><span>£500</span><span>£10,000</span></div>
+    </div>
+
     <div class="metrics">
       <div class="met hl"><div class="mlbl">Monthly retainers</div><div class="mval" id="mr">£9,000</div><div class="mnote" id="mrn">15 × £600/mo</div></div>
-      <div class="met nm"><div class="mlbl">Usage margin</div><div class="mval" id="mu">£1,200</div><div class="mnote">~£80/client est.</div></div>
+      <div class="met nm"><div class="mlbl">Usage margin (5%)</div><div class="mval" id="mu">£1,200</div><div class="mnote" id="mun">15 × £80/mo</div></div>
       <div class="met ft"><div class="mlbl">Total monthly</div><div class="mval" id="mt">£10,200</div><div class="mnote" id="my">£122,400 / year</div></div>
     </div>
+    <p style="color:var(--mut);font-size:11px;text-align:right;margin-top:12px">Usage margin calculated at 5% of client ad spend. Retainer RRP £600/mo — you set your own rate.</p>
   </div>
 
   <div class="streams">
     <div class="tbl-hdr"><span class="tbl-lbl">All revenue streams</span></div>
     <div class="sr hl"><span class="sr-name">Monthly retainer</span><span class="sr-detail">£600/mo RRP per agent you manage</span></div>
-    <div class="sr"><span class="sr-name">Usage margin</span><span class="sr-detail">Mark up client usage spend — like Google Ads margin</span></div>
+    <div class="sr"><span class="sr-name">Usage margin</span><span class="sr-detail">Charge 5% of client ad spend — avg. £80/mo per client</span></div>
     <div class="sr"><span class="sr-name">Dead data re-engagement</span><span class="sr-detail">Monetise CRM data your clients have written off</span></div>
     <div class="sr"><span class="sr-name">Creator Store royalties</span><span class="sr-detail">Build a specialist agent once, earn on every use</span></div>
     <div class="sr"><span class="sr-name">Referred leads</span><span class="sr-detail">Narwhal refers clients who need hands-on agency support</span></div>
@@ -322,12 +344,12 @@ input[type=range]{width:100%;accent-color:var(--c);cursor:pointer;margin-bottom:
   </div>
 
   <div class="cta-box">
-    <div class="cta-tag">V2 launches May 2026</div>
+    <div class="cta-tag">DeepBlue OS launches May 2026</div>
     <div class="cta-title">Agency partner slots are being filled now</div>
-    <div class="cta-body">The earlier you're in, the stronger your position when V2 goes live. Book a 30-minute partner call with the Narwhal team.</div>
+    <div class="cta-body">The earlier you're in, the stronger your position when DeepBlue OS goes live. Book a 30-minute partner call with the team.</div>
     <div class="cta-btns">
-      <a href="tel:07477134579" class="btn-p">Call Ricky — 07477 134 579</a>
-      <a href="mailto:ricky@nmg.group" class="btn-s">Email Ricky directly</a>
+      <a href="tel:07477134579" class="btn-p">Talk to a DeepBlue agent</a>
+      <a href="https://narwhallabs.io/demo" target="_blank" class="btn-s">Claim Your Free Agent</a>
     </div>
     <div class="cta-certs">ISO 27001 · SOC 2 · GDPR · UK owned · Independently funded · Bristol, UK</div>
   </div>
@@ -358,7 +380,8 @@ var vdata={
   fm:{e:"🏗️",t:"Facilities & Construction",p:"Tender enquiries and contract follow-ups get lost in inboxes. Outbound prospecting is inconsistent and relies entirely on individual reps.",b:["Handles inbound enquiries — qualifies scope, budget and timeline","Structured outbound campaigns to FM decision-makers","Follows up on all submitted proposals automatically","Re-engages lapsed clients and dormant prospects"],r:"More qualified tender opportunities. Consistent outbound activity without relying on rep discipline."},
   hos:{e:"🏨",t:"Hospitality",p:"Booking enquiries arrive at all hours — evenings, weekends, bank holidays. Every unanswered call or slow response is a booking lost to a competitor who picks up.",b:["Answers every inbound call 24/7 — no missed bookings out of hours","Books reservations and events directly into the diary","Sends automated confirmation, upsell and pre-arrival sequences","Re-engages lapsed guests with tailored outbound campaigns"],r:"More bookings confirmed, fewer no-shows, higher average spend per guest through automated upsell."},
   aut:{e:"🚗",t:"Automotive",p:"Finance leads go cold fast. Dealerships and brokers lose deals to whoever calls back first — and most follow-up happens hours after the enquiry comes in.",b:["Calls every finance or test drive enquiry within seconds","Qualifies buyer intent, budget and eligibility automatically","Books appointments directly into sales team diaries","Re-engages cold leads and dormant CRM data at scale"],r:"Higher conversion from the same lead volume. Sales teams only speak to pre-qualified, ready-to-buy prospects."},
-  ret:{e:"🛒",t:"Retail & eCommerce",p:"Abandoned carts, lapsed customers and unengaged subscribers represent enormous untapped revenue. Most brands rely on email alone — which gets ignored.",b:["Recovers abandoned carts via voice and SMS within minutes","Re-engages lapsed customers with personalised outbound campaigns","Follows up on post-purchase to drive repeat orders and reviews","Handles inbound product and order enquiries 24/7"],r:"More revenue from existing traffic and customer base. Higher LTV without increasing ad spend."}
+  ret:{e:"🛒",t:"Retail & eCommerce",p:"Abandoned carts, lapsed customers and unengaged subscribers represent enormous untapped revenue. Most brands rely on email alone — which gets ignored.",b:["Recovers abandoned carts via voice and SMS within minutes","Re-engages lapsed customers with personalised outbound campaigns","Follows up on post-purchase to drive repeat orders and reviews","Handles inbound product and order enquiries 24/7"],r:"More revenue from existing traffic and customer base. Higher LTV without increasing ad spend."},
+  other:{e:"🔍",t:"Don't see your industry?",p:"DeepBlue OS works across any sector that involves calls, leads, follow-up or customer communication. If your industry isn't listed, we'll show you exactly what's possible.",b:["Every agent is configured around your specific goals and workflows","We've deployed across 12+ UK verticals and counting","Custom agent builds available for any niche or regulated environment","Same-day deployment — live within hours of your first call"],r:"If you have customers, leads or enquiries to manage, DeepBlue OS can help. Get in touch and we'll build the case for your sector specifically."}
 };
 
 function mkPanel(v){
@@ -401,14 +424,22 @@ function goTo(n){
   window.scrollTo(0,0);
 }
 
-function doCalc(v){
-  var c=parseInt(v),r=c*600,u=c*80,t=r+u;
-  document.getElementById('cc').textContent=c;
-  document.getElementById('mr').textContent='£'+r.toLocaleString();
-  document.getElementById('mrn').textContent=c+' × £600/mo';
-  document.getElementById('mu').textContent='£'+u.toLocaleString();
-  document.getElementById('mt').textContent='£'+t.toLocaleString();
-  document.getElementById('my').textContent='£'+(t*12).toLocaleString()+' / year';
+function toggleCost(){var r=document.getElementById('cost-breakdown');var t=document.getElementById('hcost-toggle');if(r.style.display==='none'){r.style.display='table-row';t.textContent='£45,315/year ▴';}else{r.style.display='none';t.textContent='£45,315/year ▾';}}
+
+function doCalc(){
+  var clients=parseInt(document.querySelectorAll('input[type=range]')[0].value);
+  var adspend=parseInt(document.querySelectorAll('input[type=range]')[1].value);
+  var ret=clients*600;
+  var usage=Math.round(clients*(adspend*0.05));
+  var tot=ret+usage;
+  document.getElementById('cc').textContent=clients;
+  document.getElementById('adspend').textContent='£'+adspend.toLocaleString();
+  document.getElementById('mr').textContent='£'+ret.toLocaleString();
+  document.getElementById('mrn').textContent=clients+' × £600/mo';
+  document.getElementById('mu').textContent='£'+usage.toLocaleString();
+  document.getElementById('mun').textContent=clients+' × £'+Math.round(adspend*0.05)+'/mo';
+  document.getElementById('mt').textContent='£'+tot.toLocaleString();
+  document.getElementById('my').textContent='£'+(tot*12).toLocaleString()+' / year';
 }
 </script>
 </body>
